@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreshBite | Fresh & Tasty Food</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="top-bar">
+    <a href="#home" class="logo">
+      <i class="fa-solid fa-utensils"></i> Fresh<span>Bite</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <nav class="header-navigation" id="navigation">
+      <a class="active" href="#home">Home</a>
+      <a href="#categories">Categories</a>
+      <a href="#dishes">Dishes</a>
+      <a href="#about">About</a>
+      <a href="#footer">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-button" id="searchButton" aria-label="Search dishes">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+      <button class="icon-button" id="cartButton" aria-label="Shopping cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow">
+          <i class="fa-solid fa-leaf"></i> Fresh ingredients, happy mood
+        </span>
+
+        <h1>We serve <span>tasty</span><br>and fresh food.</h1>
+
+        <p>
+          Fresh flavours, delicious meals and a little extra love
+          in every bite. Find your favourite meal and enjoy it today.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#dishes" class="btn btn-primary">
+            Order Now <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#categories" class="btn btn-outline">View Menu</a>
+        </div>
+
+        <div class="hero-note">
+          <span class="note-icon"><i class="fa-solid fa-clock"></i></span>
+          <div>
+            <strong>Quick & Fresh</strong>
+            <small>Made fresh for you</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-image-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=85"
+            alt="Fresh and tasty burger">
+        </div>
+
+        <div class="floating-badge">
+          <i class="fa-solid fa-star"></i>
+          <div><strong>4.9/5</strong><small>Customer rating</small></div>
+        </div>
+
+        <div class="floating-price">
+          <small>Today's favourite</small>
+          <strong>Classic Burger</strong>
+          <b>Rs. 450</b>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="section" id="categories">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">WHAT ARE YOU CRAVING?</span>
+          <h2>Browse by <span>Category</span></h2>
+        </div>
+        <p>Something delicious for every kind of craving.</p>
+      </div>
+
+      <div class="category-grid">
+        <a href="#dishes" class="category-item">
+          <span class="category-icon"><i class="fa-solid fa-burger"></i></span>
+          <strong>Burgers</strong><small>8 items</small>
+        </a>
+        <a href="#dishes" class="category-item">
+          <span class="category-icon"><i class="fa-solid fa-pizza-slice"></i></span>
+          <strong>Pizza</strong><small>6 items</small>
+        </a>
+        <a href="#dishes" class="category-item">
+          <span class="category-icon"><i class="fa-solid fa-bowl-food"></i></span>
+          <strong>Desi Food</strong><small>9 items</small>
+        </a>
+        <a href="#dishes" class="category-item">
+          <span class="category-icon"><i class="fa-solid fa-drumstick-bite"></i></span>
+          <strong>BBQ</strong><small>5 items</small>
+        </a>
+        <a href="#dishes" class="category-item">
+          <span class="category-icon"><i class="fa-solid fa-ice-cream"></i></span>
+          <strong>Desserts</strong><small>7 items</small>
+        </a>
+        <a href="#dishes" class="category-item">
+          <span class="category-icon"><i class="fa-solid fa-mug-hot"></i></span>
+          <strong>Drinks</strong><small>4 items</small>
+        </a>
+      </div>
+    </section>
+
+    <!-- Popular Dishes -->
+    <section class="section dishes-section" id="dishes">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">OUR CUSTOMER FAVOURITES</span>
+          <h2>Popular <span>Dishes</span></h2>
+        </div>
+        <a class="text-link" href="#dishes">
+          View All <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="dish-grid">
+        <article class="dish-card">
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80" alt="Classic burger">
+            <span class="dish-tag">Popular</span>
+            <button class="favourite" aria-label="Favourite Classic Burger"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="dish-info">
+            <div class="dish-title"><h3>Classic Burger</h3><span class="rating"><i class="fa-solid fa-star"></i> 4.9</span></div>
+            <p>Juicy patty, fresh lettuce and special sauce.</p>
+            <div class="dish-bottom"><strong>Rs. 450</strong><button class="add-button" data-name="Classic Burger" aria-label="Add Classic Burger"><i class="fa-solid fa-plus"></i></button></div>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=700&q=80" alt="Cheesy pizza">
+            <span class="dish-tag">Chef's Pick</span>
+            <button class="favourite" aria-label="Favourite Cheesy Pizza"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="dish-info">
+            <div class="dish-title"><h3>Cheesy Pizza</h3><span class="rating"><i class="fa-solid fa-star"></i> 4.8</span></div>
+            <p>Melty cheese, tomato sauce and herbs.</p>
+            <div class="dish-bottom"><strong>Rs. 850</strong><button class="add-button" data-name="Cheesy Pizza" aria-label="Add Cheesy Pizza"><i class="fa-solid fa-plus"></i></button></div>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=700&q=80" alt="Fresh salad bowl">
+            <span class="dish-tag">Fresh</span>
+            <button class="favourite" aria-label="Favourite Fresh Bowl"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="dish-info">
+            <div class="dish-title"><h3>Fresh Bowl</h3><span class="rating"><i class="fa-solid fa-star"></i> 4.7</span></div>
+            <p>Fresh greens and colourful vegetables.</p>
+            <div class="dish-bottom"><strong>Rs. 520</strong><button class="add-button" data-name="Fresh Bowl" aria-label="Add Fresh Bowl"><i class="fa-solid fa-plus"></i></button></div>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=700&q=80" alt="Grilled chicken">
+            <span class="dish-tag">Best Seller</span>
+            <button class="favourite" aria-label="Favourite Grilled Chicken"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="dish-info">
+            <div class="dish-title"><h3>Grilled Chicken</h3><span class="rating"><i class="fa-solid fa-star"></i> 4.9</span></div>
+            <p>Smoky grilled chicken with tasty seasoning.</p>
+            <div class="dish-bottom"><strong>Rs. 780</strong><button class="add-button" data-name="Grilled Chicken" aria-label="Add Grilled Chicken"><i class="fa-solid fa-plus"></i></button></div>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=700&q=80" alt="Special pizza">
+            <button class="favourite" aria-label="Favourite Special Pizza"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="dish-info">
+            <div class="dish-title"><h3>Special Pizza</h3><span class="rating"><i class="fa-solid fa-star"></i> 4.8</span></div>
+            <p>A flavour-packed pizza made for sharing.</p>
+            <div class="dish-bottom"><strong>Rs. 990</strong><button class="add-button" data-name="Special Pizza" aria-label="Add Special Pizza"><i class="fa-solid fa-plus"></i></button></div>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=700&q=80" alt="Ice cream dessert">
+            <button class="favourite" aria-label="Favourite Sweet Treat"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="dish-info">
+            <div class="dish-title"><h3>Sweet Treat</h3><span class="rating"><i class="fa-solid fa-star"></i> 4.7</span></div>
+            <p>A delicious sweet finish to your meal.</p>
+            <div class="dish-bottom"><strong>Rs. 350</strong><button class="add-button" data-name="Sweet Treat" aria-label="Add Sweet Treat"><i class="fa-solid fa-plus"></i></button></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about-section" id="about">
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1000&q=85" alt="Delicious food ready to serve">
+      </div>
+      <div class="about-content">
+        <span class="eyebrow">A LITTLE ABOUT US</span>
+        <h2>Good food brings <span>people together.</span></h2>
+        <p>At FreshBite, we believe a great meal starts with fresh ingredients and ends with a smile. We make every order with care, flavour, and a passion for good food.</p>
+        <div class="about-points">
+          <span><i class="fa-solid fa-circle-check"></i> Fresh ingredients</span>
+          <span><i class="fa-solid fa-circle-check"></i> Made with care</span>
+          <span><i class="fa-solid fa-circle-check"></i> Great flavour</span>
+        </div>
+        <a href="#dishes" class="btn btn-primary">Explore Dishes <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div>
+        <span class="eyebrow">HUNGRY ALREADY?</span>
+        <h2>Your next favourite meal is waiting.</h2>
+        <p>Choose something delicious from our menu today.</p>
+      </div>
+      <a href="#dishes" class="btn btn-light">See the Menu <i class="fa-solid fa-arrow-right"></i></a>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="footer-main">
+      <div>
+        <a href="#home" class="logo footer-logo"><i class="fa-solid fa-utensils"></i> Fresh<span>Bite</span></a>
+        <p>Fresh flavours, friendly service, and food made to make your day better.</p>
+        <div class="social-links">
+          <a href="#footer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#footer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#footer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <a href="#home">Home</a><a href="#categories">Categories</a><a href="#dishes">Popular Dishes</a><a href="#about">About Us</a>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p><i class="fa-solid fa-phone"></i> +92 300 1234567</p>
+        <p><i class="fa-solid fa-envelope"></i> hello@freshbite.example</p>
+        <p><i class="fa-solid fa-location-dot"></i> Karachi, Pakistan</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 FreshBite. Demo website.</span>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
